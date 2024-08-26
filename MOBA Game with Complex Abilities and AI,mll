@@ -1,0 +1,19 @@
+(* MOBA Game with Complex Abilities and AI *)
+
+type ability = Attack | Heal | Defend | Special
+type character = { name: string; health: int; abilities: ability list; ai: bool }
+type team = character list
+
+let use_ability (char: character) (ability: ability) (target: character) : unit =
+  (* Use an ability on a target character *)
+  ()
+
+let ai_turn (character: character) : unit =
+  (* AI decision-making for a character *)
+  ()
+
+let team_battle (team1: team) (team2: team) : team =
+  (* Simulate a battle between two teams with AI *)
+  List.iter ai_turn team1;
+  List.iter ai_turn team2;
+  team1
